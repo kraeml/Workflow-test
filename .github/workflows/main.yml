@@ -31,3 +31,4 @@ jobs:
         sudo apt-get update
         sudo apt-get install --yes coreutils p7zip-full qemu-user-static
         sudo pip list
+        pip list
