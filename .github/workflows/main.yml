@@ -28,7 +28,7 @@ jobs:
     # Prepare Build
     - name: Bigest Directory /usr/local and /opt
       run: |
-        cd /usr/local
+        cd /usr/local/lib
         sudo du -h --max-depth=1 | sort -hr
-        cd /opt
+        cd /opt/hostedtoolcache
         sudo du -h --max-depth=1 | sort -hr
