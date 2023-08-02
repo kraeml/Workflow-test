@@ -28,9 +28,5 @@ jobs:
     # Prepare Build
     - name: Install Dependencies
       run: |
-        #sudo apt-get update
-        #sudo apt-get install --yes coreutils p7zip-full qemu-user-static
-        sudo pip list
-        pip list
-        cd /
+        cd /usr
         sudo du -h --max-depth=1 | sort -hr
