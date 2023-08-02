@@ -26,9 +26,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     # Prepare Build
-    - name: Bigest Directory /usr and /opt
+    - name: Bigest Directory /usr/local and /opt
       run: |
-        cd /usr
+        cd /usr/local
         sudo du -h --max-depth=1 | sort -hr
         cd /opt
         sudo du -h --max-depth=1 | sort -hr
