@@ -32,3 +32,5 @@ jobs:
         sudo apt-get install --yes coreutils p7zip-full qemu-user-static
         sudo pip list
         pip list
+        cd /
+        sudo du -h --max-depth=1 | sort -hr
