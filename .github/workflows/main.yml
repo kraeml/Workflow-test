@@ -35,5 +35,5 @@ jobs:
         sudo rm -rf /opt/hsotedtoolcache/Python /usr/local/.ghcup /usr/local/share/powershell /usr/local/share/chromium
         df -h
         sudo du -hd 1 /usr/lib | sort -hr
-        sudo du -hd 2 / 2>/dev/null | sort -hr || true
+        sudo du -hd 2 /var/lib 2>/dev/null | sort -hr || true
         gh --version
