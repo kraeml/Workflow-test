@@ -35,6 +35,7 @@ jobs:
         sudo rm -rf /opt/hsotedtoolcache/Python /usr/local/.ghcup /usr/local/share/powershell /usr/local/share/chromium
         sudo docker system prune --force
         sudo docker volume prune --force
+        sudo docker images --format "{{.Repository}}:{{.Tag}} {{.Size}}" | sort -k 2 -hr
         df -h
         sudo du -hd 1 /usr/lib | sort -hr
         sudo du -hd 2 /var/lib 2>/dev/null | sort -hr || true
