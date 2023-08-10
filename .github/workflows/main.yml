@@ -32,8 +32,8 @@ jobs:
         sudo rm -rf /usr/local/node_modules
         sudo rm -rf /opt/hostedtoolcache/CodeQL
         sudo rm -rf /opt/hostedtoolcache/go
-        sudo rm -rf /opt/hsotedtoolcache/Python
+        sudo rm -rf /opt/hsotedtoolcache/Python /usr/local/.ghcup
         df -h
-        sudo du -hd 1 /usr/local
-        sudo du -hd 1 /
+        sudo du -hd 1 /usr/local/share
+        sudo du -hd 1 / 2>/dev/null || true
         gh --version
