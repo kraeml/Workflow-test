@@ -29,7 +29,7 @@ jobs:
     - name: Bigest Directory /usr/local/lib and /opt/hostedtoolcache
       run: |
         sudo rm -rf /usr/local/lib/android
-        suod rm -rf /usr/local/node_modules
+        sudo rm -rf /usr/local/node_modules
         sudo rm -rf /opt/hostedtoolcache/CodeQL
         sudo rm -rf /opt/hostedtoolcache/go
         sudo rm -rf /opt/hsotedtoolcache/Python
