@@ -29,4 +29,4 @@ jobs:
     - name: Bigest Directory /usr/local/lib and /opt/hostedtoolcache
       run: |
         ansible || sudo apt install -y ansible
-        ansible -i localhost, -m ping localhost
+        ansible --inventory localhost, --connection local -m ping localhost
