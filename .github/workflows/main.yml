@@ -30,3 +30,4 @@ jobs:
       run: |
         ansible --version || sudo apt install -y ansible
         ansible --inventory localhost, --connection smart -e 'host_key_checking = False' -m ping localhost
+        nproc
